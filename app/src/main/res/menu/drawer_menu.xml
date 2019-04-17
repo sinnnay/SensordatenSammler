@@ -3,6 +3,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Alle Sensoren" />
+        <item
             android:id="@+id/nav_loc"
             android:icon="@drawable/ic_gps"
             android:title="Lokalisierung" />

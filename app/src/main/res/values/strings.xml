@@ -222,4 +222,5 @@
     <string name="label_dist_threshold_Loc">Distanzschwelle in m</string>
     <string name="label_max_speed_Loc">Maximalgeschwindigkeit in m/s</string>
     <string name="accele_loc_checkbox">Accelerometer zur Stillstandsmessung</string>
+    <string name="allSensor_title_text">Alle Sensoren</string>
 </resources>

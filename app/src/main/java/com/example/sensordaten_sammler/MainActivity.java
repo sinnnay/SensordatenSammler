@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new LocationFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_loc);
+                    new AllSensorsFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_all);
             if (getSupportActionBar() != null)
-                getSupportActionBar().setTitle(R.string.loc_title_text);
+                getSupportActionBar().setTitle(R.string.allSensor_title_text);
         }
 
 
@@ -64,6 +64,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new AccelerometerFragment()).commit();
                 if (getSupportActionBar() != null)
                     getSupportActionBar().setTitle(R.string.accelerometer_title_text);
+                break;
+            case R.id.nav_all:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AllSensorsFragment()).commit();
+                if (getSupportActionBar() != null)
+                    getSupportActionBar().setTitle(R.string.allSensor_title_text);
                 break;
             case R.id.nav_pressure:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
