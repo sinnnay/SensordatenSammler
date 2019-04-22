@@ -108,9 +108,7 @@ public class AccelerometerFragment extends Fragment implements SensorEventListen
             Toast.makeText(getActivity(), "Dein Gerät besitzt kein Accelerometer!", Toast.LENGTH_SHORT).show();
         }
 
-        saveswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        saveswitch.setOnCheckedChangeListener((CompoundButton compoundButton, boolean b)-> {
                 if (b) {
                     timer = new Timer();
                     timer.schedule(new TimerTask() {
@@ -134,7 +132,6 @@ public class AccelerometerFragment extends Fragment implements SensorEventListen
                 } else {
                     timer.cancel();
                 }
-            }
         });
     }
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -12,181 +13,282 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView7"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Lokalisierung" />
 
         <Switch
-            android:id="@+id/switch1"
-            android:layout_width="40dp"
-            android:layout_height="44dp"
-            android:layout_alignParentTop="true"
+            android:id="@+id/switchLokal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView9"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_toEndOf="@+id/spinner2" />
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerLokal" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
             android:layout_below="@+id/textView"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Accelerometer" />
 
         <Switch
-            android:id="@+id/switch2"
-            android:layout_width="30dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/switch1"
+            android:id="@+id/switchAccel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchLokal"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="3dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_toEndOf="@+id/spinner3" />
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerAccel" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
             android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Gyroskop" />
 
         <Switch
-            android:id="@+id/switch3"
-            android:layout_width="113dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/switch2"
+            android:id="@+id/switchGyro"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchAccel"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_toEndOf="@+id/textView" />
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerGyro" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
             android:layout_below="@+id/textView3"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Magnetometer" />
 
         <Switch
-            android:id="@+id/switch4"
-            android:layout_width="113dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/switch3"
+            android:id="@+id/switchMagne"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchGyro"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_toEndOf="@+id/textView" />
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerMagne" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
             android:layout_below="@+id/textView4"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Licht" />
 
         <Switch
-            android:id="@+id/switch5"
-            android:layout_width="113dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/switch4"
+            android:id="@+id/switchLicht"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchMagne"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_toEndOf="@+id/textView" />
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerLicht" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
             android:layout_below="@+id/textView5"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Umgebungstemperatur" />
 
         <Switch
-            android:id="@+id/switch6"
-            android:layout_width="113dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/switch5"
+            android:id="@+id/switchUmgebungstemp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchLicht"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_toEndOf="@+id/textView" />
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerUmgebungstemp" />
 
         <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="77dp"
-            android:layout_height="44dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="70dp"
+            android:id="@+id/spinnerLokal"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/textView"
+            android:backgroundTint="#884DABFA"
+            android:dropDownWidth="match_parent"
             android:entries="@array/sampling_frequencies"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:textAlignment="viewStart" />
 
         <Spinner
-            android:id="@+id/spinner3"
-            android:layout_width="77dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/spinner2"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="10dp"
+            android:id="@+id/spinnerAccel"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerLokal"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/textView2"
             android:entries="@array/sampling_frequencies" />
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="177dp"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="39dp"
-            android:fontFamily="sans-serif-thin"
-            android:text="@string/sensor_list_title" />
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/sensor_list_title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="79dp"
-            android:layout_height="30dp"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/textView7"
-            android:text="Frequenz" />
+            android:fontFamily="sans-serif-light"
+            android:text="Frequenz"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="94dp"
-            android:layout_height="33dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/textView8"
-            android:text="Speichern" />
+            android:fontFamily="sans-serif-light"
+            android:text="Speichern"
+            android:textAlignment="viewEnd"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerGyro"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerAccel"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:entries="@array/sampling_frequencies" />
+
+        <Spinner
+            android:id="@+id/spinnerMagne"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerGyro"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <Spinner
+            android:id="@+id/spinnerLicht"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerMagne"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:entries="@array/sampling_frequencies" />
+
+        <Spinner
+            android:id="@+id/spinnerUmgebungstemp"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerLicht"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@+id/spinnerLokal"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:divider="@android:color/black"
+             />
 
     </RelativeLayout>
 </ScrollView>
