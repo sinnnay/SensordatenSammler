@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">Sensordaten-Sammler</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="settings_title_text">Einstellungen</string>
+    <string name="accelerometer_title_text">Accelerometer</string>
+    <string name="linaccelerometer_title_text">Linear Accelerometer</string>
+    <string name="battery_title_text">Batterie</string>
+    <string name="loc_title_text">Lokalisierung</string>
+    <string name="wifi_title_text">WiFi</string>
+    <string name="light_title_text">Licht</string>
+    <string name="bluetooth_title_text">Bluetooth</string>
+    <string name="gyro_title_text">Gyroskop</string>
+    <string name="gravity_title_text">Schwerkraft</string>
+    <string name="step_counter_title_text">Schrittzähler</string>
+    <string name="magnetometer_title_text">Magnetometer</string>
+    <string name="air_pressure_title_text">Umgebungsluftdruck</string>
+    <string name="env_temp_title_text">Umgebungstemperatur</string>
+    <string name="humidity_title_text">Luftfeuchtigkeit</string>
+    <string name="proximity_title_text">Proximity</string>
+    <string name="network_location_title_text">Netzwerk-Lokalisierung</string>
+    <string name="compass_title_text">Kompass</string>
+    <string name="sensor_list_title">Liste aller Sensoren</string>
+    <string name="start_listening_btn">Sensordaten abhören</string>
+    <string name="choose_loc_methods_btn">Positionierungsverfahren wählen</string>
+    <string name="stop_listening_btn">Abhören der Sensordaten stoppen</string>
+    <string name="start_listening_btn_loc">Standortinformationen abfragen</string>
+    <string name="stop_listening_btn_loc">Abfragen der Standortinformationen stoppen</string>
+    <string name="start_listening_btn_network">Netzwerk-Standortinformationen abfragen</string>
+    <string name="stop_listening_btn_network">Abfragen der Netzwerk-Standortinformationen stoppen</string>
+    <string name="x_valAcc">x :  %1$f m/s²</string>
+    <string name="y_valAcc">y :  %1$f m/s²</string>
+    <string name="z_valAcc">z :  %1$f m/s²</string>
+    <string name="abs_valAcc">abs :  %1$f </string>
+    <string name="x_valGyro">x :  %1$f rad/s</string>
+    <string name="y_valGyro">y :  %1$f rad/s</string>
+    <string name="z_valGyro">z :  %1$f rad/s</string>
+    <string name="x_valMagnetom">x :  %1$f µT</string>
+    <string name="y_valMagnetom">y :  %1$f µT</string>
+    <string name="z_valMagnetom">z :  %1$f µT</string>
+    <string name="x_valGravity">x :  %1$f m/s²</string>
+    <string name="y_valGravity">y :  %1$f m/s²</string>
+    <string name="z_valGravity">z :  %1$f m/s²</string>
+    <string name="val_StepCounter">Schritte:  %1$f</string>
+    <string name="illuminance">Beleuchtungsstärke:  %1$f lx</string>
+    <string name="ambient_temp">Umgebungstemperatur:  %1$f °C</string>
+    <string name="ambient_air_pressure">Umgebungsluftdruck:  %1$f hPa or mbar</string>
+    <string name="relative_humidity">Luftfeuchtigkeit:  %1$f %%</string>
+    <string name="proximity">Proximity:  %1$f cm</string>
+    <string name="x_valMagnetomEmpty">x :  %1$s µT</string>
+    <string name="y_valMagnetomEmpty">y :  %1$s µT</string>
+    <string name="z_valMagnetomEmpty">z :  %1$s µT</string>
+    <string name="illuminanceEmpty">Beleuchtungsstärke:  %1$s lx</string>
+    <string name="ambient_tempEmpty">Umgebungstemperatur:  %1$s °C</string>
+    <string name="ambient_air_pressureEmpty">Umgebungsluftdruck:  %1$s hPa or mbar</string>
+    <string name="relative_humidityEmpty">Luftfeuchtigkeit:  %1$s %%</string>
+    <string name="proximityEmpty">Proximity:  %1$s cm</string>
+    <string name="val_StepCounterEmpty">Schritte:  %1$s</string>
+    <string name="x_valAccEmpty">x :  %1$s m/s²</string>
+    <string name="y_valAccEmpty">y :  %1$s m/s²</string>
+    <string name="z_valAccEmpty">z :  %1$s m/s²</string>
+    <string name="abs_valAccEmpty">Abs :  %1$s </string>
+    <string name="x_valGyroEmpty">x :  %1$s rad/s</string>
+    <string name="y_valGyroEmpty">y :  %1$s rad/s</string>
+    <string name="z_valGyroEmpty">z :  %1$s rad/s</string>
+    <string name="x_valGravityEmpty">x : %1$s m/s²</string>
+    <string name="y_valGravityEmpty">y : %1$s m/s²</string>
+    <string name="z_valGravityEmpty">z : %1$s m/s²</string>
+    <string-array id="samp_freq" name="sampling_frequencies">
+        <item id="normal">Normal</item>
+        <item id="schnell">Schnell</item>
+    </string-array>
+    <string-array id="loc_methods_items" name="loc_methods_items">
+        <item id="gps">GPS (LocMan)</item>
+        <item id="network">Netzwerk (LocMan)</item>
+        <item id="high_acc">Hohe Genauigkeit</item>
+        <item id="balanced">Genauigkeit und Energieverbrauch balanciert</item>
+        <item id="low_pow">Wenig Energieverbauch</item>
+        <item id="no_pow">Kein Energieverbrauch</item>
+    </string-array>
+    <string name="label_sample_freq_spinner">Sampling-Frequenz:</string>
+    <string name="label_min_intervall_LocMan">Zeitintervall in ms</string>
+    <string name="label_fastes_intervall_Loc">Kürzestes Zeitintervall in ms</string>
+    <string name="label__change_in_dist_LocMan">Positionsdifferenz in m</string>
+    <string name="details_textfield_acc_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f m/s²&lt;br>Max-Bereich: %6$f m/s²</string>
+    <string name="details_textfield_acc_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f m/s²\nMax-Bereich: %6$f m/s²</string>
+    <string name="details_textfield_gravity_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f m/s²&lt;br>Max-Bereich: %6$f m/s²</string>
+    <string name="details_textfield_gravity_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f m/s²\nMax-Bereich: %6$f m/s²</string>
+    <string name="details_textfield_gyro_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f rad/s&lt;br>Max-Bereich: %6$f rad/s</string>
+    <string name="details_textfield_gyro_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f rad/s\nMax-Bereich: %6$f rad/s</string>
+    <string name="details_textfield_magnetom_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f µT&lt;br>Max-Bereich: %6$f µT</string>
+    <string name="details_textfield_magnetom_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f µT\nMax-Bereich: %6$f µT</string>
+    <string name="details_textfield_light_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f lx&lt;br>Max-Bereich: %6$f lx</string>
+    <string name="details_textfield_light_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f lx\nMax-Bereich: %6$f lx</string>
+    <string name="details_textfield_ambient_temp_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f °C&lt;br>Max-Bereich: %6$f °C</string>
+    <string name="details_textfield_ambient_temp_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f °C\nMax-Bereich: %6$f °C</string>
+    <string name="details_textfield_humidity_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f %%&lt;br>Max-Bereich: %6$f %%</string>
+    <string name="details_textfield_humidity_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f %%\nMax-Bereich: %6$f %%</string>
+    <string name="details_textfield_pressure_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f hPa or mbar&lt;br>Max-Bereich: %6$f hPa or mbar</string>
+    <string name="details_textfield_pressure_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f hPa or mbar\nMax-Bereich: %6$f hPa or mbar</string>
+    <string name="details_textfield_proximity_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f cm&lt;br>Max-Bereich: %6$f cm</string>
+    <string name="details_textfield_proximity_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f cm\nMax-Bereich: %6$f cm</string>
+    <string name="details_textfield_step_counter_withStyle">&lt;b>&lt;font size="25">Details:&lt;/font>&lt;/b>&lt;br>Name: %1$s&lt;br>Hersteller: %2$s&lt;br>Version: %3$d&lt;br>Power: %4$f mA&lt;br>Auflösung: %5$f &lt;br>Max-Bereich: %6$f</string>
+    <string name="details_textfield_step_counter_withoutStyle">Details:\nName: %1$s\nHersteller: %2$s\nVersion: %3$d\nPower: %4$f mA\nAuflösung: %5$f\nMax-Bereich: %6$f</string>
+    <string name="save_btn">Speichern off-phone</string>
+    <string name="local_storage_checkbox">Speichern lokal als CSV-Datei</string>
+    <string name="label_loc_man_mode">Provider:</string>
+    <string name="label_loc_fused">Priorität:</string>
+    <string name="fused">LocationServices.FusedLocationProviderApi:</string>
+    <string name="loc_man">LocationManager:</string>
+    <string name="indoor_table_wp_headline">Indoor:</string>
+    <string name="outdoor_table_wp_headline">Outdoor:</string>
+    <string name="high_acc">HighAcc</string>
+    <string name="balanced">Balanced</string>
+    <string name="low_pow">LowPow</string>
+    <string name="no_pow">NoPow</string>
+    <string name="gps">GPS</string>
+    <string name="network">Network</string>
+    <string name="loc_data_empty">--</string>
+    <string name="dialog_title">Verfügbare Positionierungsverfahren / Prioritäten</string>
+    <string name="ok_label">OK</string>
+    <string name="clear_all_label">Clear</string>
+    <string name="dismiss_label">Abbrechen</string>
+    <string name="t_head_priority">Priorität</string>
+    <string name="t_head_provider">Provider</string>
+    <string name="t_head_lat">Latitude</string>
+    <string name="t_head_long">Longitude</string>
+    <string name="t_head_alt">Altitude</string>
+    <string name="t_head_speed">Speed</string>
+    <string name="t_head_acc">Accuracy</string>
+    <string name="t_head_indoor_wp_id">WP-Nr.</string>
+    <string name="t_head_ts">Timestamp</string>
+
+    <string-array name="outdoor_route_wpts">
+        <item id="gps">GPS (LocMan)</item>
+        <item id="network">Netzwerk (LocMan)</item>
+        <item id="high_acc">Hohe Genauigkeit</item>
+        <item id="balanced">Genauigkeit und Energieverbrauch balanciert</item>
+        <item id="low_pow">Wenig Energieverbauch</item>
+        <item id="no_pow">Kein Energieverbrauch</item>
+    </string-array>
+
+    <string name="wp1">1</string>
+    <string name="wp1_lat_ind">51.44787°N</string>
+    <string name="wp1_long_ind">7.27072°E</string>
+    <string name="wp1_alt_ind">129.3m</string>
+
+    <string name="wp2">2</string>
+    <string name="wp2_lat_ind">51.44767°N</string>
+    <string name="wp2_long_ind">7.27089°E</string>
+    <string name="wp2_alt_ind">128.5m</string>
+
+    <string name="wp3">3</string>
+    <string name="wp3_lat_ind">51.44740°N</string>
+    <string name="wp3_long_ind">7.27112°E</string>
+    <string name="wp3_alt_ind">127.3m</string>
+
+    <string name="wp4">4</string>
+    <string name="wp4_lat_ind">51.44749°N</string>
+    <string name="wp4_long_ind">7.27138°E</string>
+    <string name="wp4_alt_ind">127.2m</string>
+
+    <string name="wp5">5</string>
+    <string name="wp5_lat_ind">51.44718°N</string>
+    <string name="wp5_long_ind">7.27167°E</string>
+    <string name="wp5_alt_ind">126.4m</string>
+
+    <string name="wp6">6</string>
+    <string name="wp6_lat_ind">51.44708°N</string>
+    <string name="wp6_long_ind">7.27138°E</string>
+    <string name="wp6_alt_ind">126.6m</string>
+
+    <string name="wp7">7</string>
+    <string name="wp7_lat_ind">51.44683°N</string>
+    <string name="wp7_long_ind">7.27160°E</string>
+    <string name="wp7_alt_ind">126.4m</string>
+
+    <string name="wp8">8</string>
+    <string name="wp8_lat_ind">51.44698°N</string>
+    <string name="wp8_long_ind">7.27205°E</string>
+    <string name="wp8_alt_ind">126.3m</string>
+
+
+    <string name="wp1_lat_out">51.44800°N</string>
+    <string name="wp1_long_out">7.27084°E</string>
+    <string name="wp1_alt_out">129.0m</string>
+
+    <string name="wp2_lat_out">51.44828°N</string>
+    <string name="wp2_long_out">7.27171°E</string>
+    <string name="wp2_alt_out">128.7m</string>
+
+    <string name="wp3_lat_out">51.44796°N</string>
+    <string name="wp3_long_out">7.27199°E</string>
+    <string name="wp3_alt_out">127.5m</string>
+
+    <string name="wp4_lat_out">51.44783°N</string>
+    <string name="wp4_long_out">7.27202°E</string>
+    <string name="wp4_alt_out">127.0m</string>
+
+    <string name="wp5_lat_out">51.44733°N</string>
+    <string name="wp5_long_out">7.27246°E</string>
+    <string name="wp5_alt_out">126.3m</string>
+
+    <string name="wp6_lat_out">51.44714°N</string>
+    <string name="wp6_long_out">7.27223°E</string>
+    <string name="wp6_alt_out">126.2m</string>
+
+    <string name="wp7_lat_out">51.44693°N</string>
+    <string name="wp7_long_out">7.27236°E</string>
+    <string name="wp7_alt_out">125.9m</string>
+
+    <string name="wp8_lat_out">51.44674°N</string>
+    <string name="wp8_long_out">7.27176°E</string>
+    <string name="wp8_alt_out">126.3m</string>
+
+    <string name="btn_new_wp">+ Add new Waypoint</string>
+    <string name="route_section_headline">Routen</string>
+    <string name="btn_rm_wpt">X</string>
+    <string name="t_head_rm_wpt">Remove</string>
+    <string name="btn_sv_ts">Stamp the time</string>
+    <string name="hint_csv_file_name">Routenbezeichnung</string>
+    <string name="label_dist_threshold_Loc">Distanzschwelle in m</string>
+    <string name="label_max_speed_Loc">Maximalgeschwindigkeit in m/s</string>
+    <string name="accele_loc_checkbox">Accelerometer zur Stillstandsmessung</string>
+</resources>

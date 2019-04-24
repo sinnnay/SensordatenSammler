@@ -1,0 +1,200 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\73b2558c979c635a2b672d633e118b13\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\8a1785595abfe41e20fa21c82d335dda\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b7eb360f00149b46ddfa6dd57433184b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\4724c27865c0d80d42bf5aaa4da0c547\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\4c29fb42ff169845045985485f74250a\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\903bd049dd9dd085e46f47af79da3033\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05394a872603d671a526046057fbe6a6\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e52712b3012d01dd5af726e43b27b842\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\6403bcc8895a212fae94bbc3c722e6d6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\cd4d16b580fece19893a1aa43b916421\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\d94a67ad910d838bb9f5baac15086830\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d9ac660b71baf8b2386337b5af934f8e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8dc095fe21a29a4e86eb1527bfd5b09a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\24504e03495286cdb29659eb5a169fcc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\9d4501e4836a6867fde672cc67e77c7f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\c90aafcf5c838b76c98b68b394f0dfe6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\cb67f2688d914e6c47f04ef83475e535\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\31ea1cb7481f9d489d842084da0d0845\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3853cbbd84b69fa9f407024c38948863\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cc1eb53e508533ca1a1f3128dc315762\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7821053627510f12a30666c4b731effd\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:8:22-76
+uses-feature#android.hardware.location.gps
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:9:19-63
+uses-feature#android.hardware.location.network
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:10:5-70
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:10:19-67
+application
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:12:5-33:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b7eb360f00149b46ddfa6dd57433184b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b7eb360f00149b46ddfa6dd57433184b\AndroidManifest.xml:9:5-20
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\4724c27865c0d80d42bf5aaa4da0c547\AndroidManifest.xml:11:5-12:19
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\4724c27865c0d80d42bf5aaa4da0c547\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\4c29fb42ff169845045985485f74250a\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\4c29fb42ff169845045985485f74250a\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\903bd049dd9dd085e46f47af79da3033\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\903bd049dd9dd085e46f47af79da3033\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05394a872603d671a526046057fbe6a6\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05394a872603d671a526046057fbe6a6\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:22:5-26:19
+	android:supportsRtl
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:18:9-40
+activity#com.example.sensordaten_sammler.MainActivity
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:19:9-27:20
+	android:configChanges
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:21:13-48
+	android:theme
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:20:13-56
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:19:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:25:27-74
+receiver#com.example.sensordaten_sammler.rest.Data2ServerHelper
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:28:9-32:20
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:28:19-57
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:29:13-31:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:30:17-79
+	android:name
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml:30:25-76
+uses-sdk
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\73b2558c979c635a2b672d633e118b13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\73b2558c979c635a2b672d633e118b13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\8a1785595abfe41e20fa21c82d335dda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\8a1785595abfe41e20fa21c82d335dda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b7eb360f00149b46ddfa6dd57433184b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b7eb360f00149b46ddfa6dd57433184b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\4724c27865c0d80d42bf5aaa4da0c547\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\4724c27865c0d80d42bf5aaa4da0c547\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\4c29fb42ff169845045985485f74250a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\4c29fb42ff169845045985485f74250a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\903bd049dd9dd085e46f47af79da3033\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\903bd049dd9dd085e46f47af79da3033\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05394a872603d671a526046057fbe6a6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\05394a872603d671a526046057fbe6a6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e52712b3012d01dd5af726e43b27b842\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\e52712b3012d01dd5af726e43b27b842\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\6403bcc8895a212fae94bbc3c722e6d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\6403bcc8895a212fae94bbc3c722e6d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\cd4d16b580fece19893a1aa43b916421\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\cd4d16b580fece19893a1aa43b916421\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\d94a67ad910d838bb9f5baac15086830\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\d94a67ad910d838bb9f5baac15086830\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d9ac660b71baf8b2386337b5af934f8e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d9ac660b71baf8b2386337b5af934f8e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8dc095fe21a29a4e86eb1527bfd5b09a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8dc095fe21a29a4e86eb1527bfd5b09a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\24504e03495286cdb29659eb5a169fcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\24504e03495286cdb29659eb5a169fcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\9d4501e4836a6867fde672cc67e77c7f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\9d4501e4836a6867fde672cc67e77c7f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\c90aafcf5c838b76c98b68b394f0dfe6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\c90aafcf5c838b76c98b68b394f0dfe6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\cb67f2688d914e6c47f04ef83475e535\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\cb67f2688d914e6c47f04ef83475e535\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\31ea1cb7481f9d489d842084da0d0845\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\31ea1cb7481f9d489d842084da0d0845\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3853cbbd84b69fa9f407024c38948863\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3853cbbd84b69fa9f407024c38948863\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cc1eb53e508533ca1a1f3128dc315762\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cc1eb53e508533ca1a1f3128dc315762\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7821053627510f12a30666c4b731effd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7821053627510f12a30666c4b731effd\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Student\Downloads\SensordatenSammler-master\SensordatenSammler-master\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\aeb678ee1418ffdcc0a8b367362ce79d\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Student\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\f4d67dd999f763532f6fd45703746788\AndroidManifest.xml:24:13-58

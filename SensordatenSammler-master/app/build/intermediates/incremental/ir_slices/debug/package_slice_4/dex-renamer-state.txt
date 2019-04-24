@@ -1,0 +1,4 @@
+#Wed Apr 24 12:43:52 CEST 2019
+base.0=C\:\\Users\\Student\\Downloads\\SensordatenSammler-master\\SensordatenSammler-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex
