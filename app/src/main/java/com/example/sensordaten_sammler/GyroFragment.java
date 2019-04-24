@@ -305,6 +305,7 @@ public class GyroFragment extends Fragment implements SensorEventListener, View.
             data.put("x", params[0]);
             data.put("y", params[1]);
             data.put("z", params[2]);
+            data.put("timestamp", System.currentTimeMillis());
             data.put("session_id",Session.getID());
             jsonArray.put(data);
         }
