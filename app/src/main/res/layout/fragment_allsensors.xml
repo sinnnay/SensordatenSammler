@@ -23,6 +23,23 @@
             android:layout_marginBottom="5dp"
             android:text="Lokalisierung" />
 
+        <Spinner
+            android:id="@+id/spinnerLokal"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView"
+            android:backgroundTint="#884DABFA"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/sampling_frequencies"
+            android:spinnerMode="dropdown"
+            android:textAlignment="viewStart" />
+
         <Switch
             android:id="@+id/switchLokal"
             android:layout_width="match_parent"
@@ -46,6 +63,19 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:text="Accelerometer" />
+
+        <Spinner
+            android:id="@+id/spinnerAccel"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerLokal"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:entries="@array/sampling_frequencies" />
 
         <Switch
             android:id="@+id/switchAccel"
@@ -71,6 +101,19 @@
             android:layout_marginBottom="5dp"
             android:text="Gyroskop" />
 
+        <Spinner
+            android:id="@+id/spinnerGyro"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerAccel"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:entries="@array/sampling_frequencies" />
+
         <Switch
             android:id="@+id/switchGyro"
             android:layout_width="match_parent"
@@ -94,6 +137,19 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:text="Magnetometer" />
+
+        <Spinner
+            android:id="@+id/spinnerMagne"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerGyro"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:entries="@array/sampling_frequencies" />
 
         <Switch
             android:id="@+id/switchMagne"
@@ -119,6 +175,18 @@
             android:layout_marginBottom="5dp"
             android:text="Licht" />
 
+        <Spinner
+            android:id="@+id/spinnerLicht"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerMagne"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:entries="@array/sampling_frequencies" />
+
         <Switch
             android:id="@+id/switchLicht"
             android:layout_width="match_parent"
@@ -143,6 +211,18 @@
             android:layout_marginBottom="5dp"
             android:text="Umgebungstemperatur" />
 
+        <Spinner
+            android:id="@+id/spinnerUmgebungstemp"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerLicht"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:entries="@array/sampling_frequencies" />
+
         <Switch
             android:id="@+id/switchUmgebungstemp"
             android:layout_width="match_parent"
@@ -155,35 +235,146 @@
             android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/spinnerUmgebungstemp" />
 
-        <Spinner
-            android:id="@+id/spinnerLokal"
-            android:layout_width="125dp"
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="120dp"
             android:layout_height="45dp"
-            android:layout_below="@+id/textView8"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
             android:layout_marginStart="5dp"
-            android:layout_marginLeft="0dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_toEndOf="@+id/textView"
-            android:backgroundTint="#884DABFA"
-            android:dropDownWidth="match_parent"
-            android:entries="@array/sampling_frequencies"
-            android:spinnerMode="dropdown"
-            android:textAlignment="viewStart" />
+            android:text="Umgebungsluftdruck" />
 
         <Spinner
-            android:id="@+id/spinnerAccel"
+            android:id="@+id/spinnerUmgebungsluftdruck"
             android:layout_width="125dp"
             android:layout_height="45dp"
-            android:layout_below="@+id/spinnerLokal"
+            android:layout_below="@+id/spinnerUmgebungstemp"
             android:layout_marginStart="5dp"
-            android:layout_marginLeft="0dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_toEndOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView6"
             android:entries="@array/sampling_frequencies" />
+
+        <Switch
+            android:id="@+id/switchUmgebungsluftdruck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchUmgebungstemp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerUmgebungsluftdruck" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Schrittzähler" />
+
+        <Spinner
+            android:id="@+id/spinnerSchrittzaehler"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerUmgebungsluftdruck"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:entries="@array/sampling_frequencies" />
+
+        <Switch
+            android:id="@+id/switchSchrittzaehler"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchUmgebungsluftdruck"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerUmgebungsluftdruck" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Kompass" />
+
+        <Spinner
+            android:id="@+id/spinnerKompass"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerSchrittzaehler"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView11"
+            android:entries="@array/sampling_frequencies" />
+
+        <Switch
+            android:id="@+id/switchKompass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchSchrittzaehler"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerSchrittzaehler" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Batterie" />
+
+        <Spinner
+            android:id="@+id/spinnerBatterie"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinnerKompass"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:entries="@array/sampling_frequencies" />
+
+        <Switch
+            android:id="@+id/switchBatterie"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/switchKompass"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/spinnerKompass" />
 
         <TextView
             android:id="@+id/textView7"
@@ -230,54 +421,6 @@
             android:textAlignment="viewEnd"
             android:textSize="16sp"
             android:textStyle="bold" />
-
-        <Spinner
-            android:id="@+id/spinnerGyro"
-            android:layout_width="125dp"
-            android:layout_height="45dp"
-            android:layout_below="@+id/spinnerAccel"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toEndOf="@+id/textView3"
-            android:entries="@array/sampling_frequencies" />
-
-        <Spinner
-            android:id="@+id/spinnerMagne"
-            android:layout_width="125dp"
-            android:layout_height="45dp"
-            android:layout_below="@+id/spinnerGyro"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toEndOf="@+id/textView4" />
-
-        <Spinner
-            android:id="@+id/spinnerLicht"
-            android:layout_width="125dp"
-            android:layout_height="45dp"
-            android:layout_below="@+id/spinnerMagne"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toEndOf="@+id/textView5"
-            android:entries="@array/sampling_frequencies" />
-
-        <Spinner
-            android:id="@+id/spinnerUmgebungstemp"
-            android:layout_width="125dp"
-            android:layout_height="45dp"
-            android:layout_below="@+id/spinnerLicht"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toEndOf="@+id/textView6" />
 
         <View
             android:id="@+id/divider"
