@@ -120,6 +120,7 @@ public class AccelerometerFragment extends Fragment implements SensorEventListen
                             data.put("x", x1);
                             data.put("y", y1);
                             data.put("z", z1);
+                            data.put("timestamp", System.currentTimeMillis());
                             data.put("session_id", Session.getID());
 
                         } catch (JSONException e) {
