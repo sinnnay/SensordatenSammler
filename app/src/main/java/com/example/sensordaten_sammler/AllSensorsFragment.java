@@ -236,6 +236,23 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
                 MainActivity.sensorManager.unregisterListener(this, accelSensor);
             }
         });
+
+        gyroSwitch.setOnCheckedChangeListener((CompoundButton compoundButton, boolean b)-> {
+            String sampleFreq = gyroSpinner.getSelectedItem().toString();
+            int sensorDelay = 1000;
+            if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[0])) {
+                sensorDelay = SensorManager.SENSOR_DELAY_NORMAL;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[1])) {
+                sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
+            }
+            if(b){
+                MainActivity.sensorManager.registerListener(this, gyroSensor, sensorDelay);
+            }
+            else{
+                MainActivity.sensorManager.unregisterListener(this, gyroSensor);
+            }
+        });
+
         magnetoSwitch.setOnCheckedChangeListener((CompoundButton compoundButton, boolean b)-> {
             String sampleFreq = magnetoSpinner.getSelectedItem().toString();
             int sensorDelay = 1000;
