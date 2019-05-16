@@ -223,4 +223,5 @@
     <string name="label_max_speed_Loc">Maximalgeschwindigkeit in m/s</string>
     <string name="accele_loc_checkbox">Accelerometer zur Stillstandsmessung</string>
     <string name="allSensor_title_text">Alle Sensoren</string>
+    <string name="dir_of_travel_title_text">Fahrtrichtung Carrera</string>
 </resources>

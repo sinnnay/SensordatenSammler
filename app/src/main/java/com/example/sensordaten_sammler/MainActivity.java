@@ -59,6 +59,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
+            case R.id.nav_dir_of_travel:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new DirectionOfTravelFragment()).commit();
+                if (getSupportActionBar() != null)
+                    getSupportActionBar().setTitle(R.string.dir_of_travel_title_text);
+                break;
             case R.id.nav_accelerometer:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AccelerometerFragment()).commit();
