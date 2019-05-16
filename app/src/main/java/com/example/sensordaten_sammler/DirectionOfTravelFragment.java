@@ -48,6 +48,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -57,6 +58,9 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
     TextView directionOfTravelTV;
     Sensor accelSensor, gyroSensor;
     int sensorDelay;
+    int sampleCount;
+    int sensorEventIndicatingLeftTurn = 0, sensorEventIndicatingRightTurn = 0, sensorEventIndicatingStraightDir = 0;
+    Queue<Float> messdatenZGyro;
 
     Timer timer = new Timer();
 //    private static final String fileName = "ACCFile.csv";
@@ -78,6 +82,8 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
         //Sensoren holen
         accelSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         gyroSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        messdatenZGyro = new LinkedList<>();
+        sampleCount = 0;
 
         //startet das speichern beim ausführen des switch indem es die sensoren registriert
         sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
@@ -101,6 +107,14 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
         MainActivity.sensorManager.unregisterListener(this, gyroSensor);
     }
 
+//    public static int max(int first, int... rest) {
+//        int ret = first;
+//        for (int val : rest) {
+//            ret = Math.max(ret, val);
+//        }
+//        return ret;
+//    }
+
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         switch(sensorEvent.sensor.getType()) {
@@ -111,12 +125,40 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
 //                break;
             case Sensor.TYPE_GYROSCOPE:
                 Log.d("newTEST","gyro: "+sensorEvent.values[0]+"-"+sensorEvent.values[1]+"-"+sensorEvent.values[2]);
-                if(sensorEvent.values[2] > 0.4)
-                    directionOfTravelTV.setText("Links");
-                else if(sensorEvent.values[2] < -0.4)
-                    directionOfTravelTV.setText("Rechts");
-                else
-                    directionOfTravelTV.setText("Geradeaus");
+                messdatenZGyro.add(sensorEvent.values[2]);
+                if(messdatenZGyro.size() > 3){
+                    for(Float f : messdatenZGyro){
+                        if(sensorEvent.values[2] > 0.4) {
+                            sensorEventIndicatingLeftTurn++;
+                        }
+                        else if(sensorEvent.values[2] < -0.4){
+                            sensorEventIndicatingRightTurn++;
+                        }
+                        else{
+                            sensorEventIndicatingStraightDir++;
+                        }
+                    }
+
+                    if(sensorEventIndicatingLeftTurn > sensorEventIndicatingRightTurn && sensorEventIndicatingLeftTurn > sensorEventIndicatingStraightDir){
+                        directionOfTravelTV.setText("Links");
+                    }
+                    else if(sensorEventIndicatingRightTurn > sensorEventIndicatingLeftTurn && sensorEventIndicatingRightTurn > sensorEventIndicatingStraightDir){
+                        directionOfTravelTV.setText("Rechts");
+                    }
+                    else{
+                        directionOfTravelTV.setText("Geradeaus");
+                    }
+                    sensorEventIndicatingLeftTurn = 0;
+                    sensorEventIndicatingRightTurn = 0;
+                    sensorEventIndicatingStraightDir = 0;
+                    messdatenZGyro.remove();
+                }
+//                if(sensorEvent.values[2] > 0.4)
+//                    directionOfTravelTV.setText("Links");
+//                else if(sensorEvent.values[2] < -0.4)
+//                    directionOfTravelTV.setText("Rechts");
+//                else
+//                    directionOfTravelTV.setText("Geradeaus");
                 break;
             default:
                 Log.d("ERROR", "Fehler bei dem Typen:"+sensorEvent.sensor.getType());
