@@ -31,6 +31,8 @@ import com.example.sensordaten_sammler.rest.ConnectionRest;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileOutputStream;
+
 
 public class AllSensorsFragment extends Fragment implements SensorEventListener, LocationListener {
 
@@ -69,6 +71,9 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
         compassSpinner = view.findViewById(R.id.spinnerKompass);
         batterieSpinner = view.findViewById(R.id.spinnerBatterie);
 
+        saveFile("time,x,y,z"+"\n", true,"GyroFile.csv");
+        saveFile("time,x,y,z"+"\n", true,"AccFile.csv");
+
 
         return view;
     }
@@ -88,6 +93,8 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
         stepCounterSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
         compassSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
         batterieSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
+
+
 
 
 
@@ -399,7 +406,8 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
         JSONObject data = new JSONObject();
         switch(sensorEvent.sensor.getType()) {
         case Sensor.TYPE_ACCELEROMETER:
-            try {
+            saveFile(System.currentTimeMillis() + "," + sensorEvent.values[0] + "," + sensorEvent.values[1] + "," + sensorEvent.values[2]+"\n", true, "AccFile.csv");
+           /* try {
                 data.put("x", sensorEvent.values[0]);
                 data.put("y", sensorEvent.values[1]);
                 data.put("z", sensorEvent.values[2]);
@@ -408,9 +416,11 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+
             new ConnectionRest().execute("accelerometer", data.toString());
             Log.d("newTEST","accelerometer__"+sensorEvent.values[0]+"-"+sensorEvent.values[1]+"-"+sensorEvent.values[2]);
             break;
+            */
         case Sensor.TYPE_MAGNETIC_FIELD:
             try {
                 data.put("x", sensorEvent.values[0]);
@@ -435,17 +445,21 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
             new ConnectionRest().execute("schwerkraft", data.toString());
             break;
         case Sensor.TYPE_GYROSCOPE:
-            try {
+            saveFile(System.currentTimeMillis() + "," + sensorEvent.values[0] + "," + sensorEvent.values[1] + "," + sensorEvent.values[2]+"\n", true, "GyroFile.csv");
+            /*try {
+
                 data.put("x", sensorEvent.values[0]);
                 data.put("y", sensorEvent.values[1]);
                 data.put("z", sensorEvent.values[2]);
                 data.put("timestamp", System.currentTimeMillis());
                 data.put("session_id", Session.getID());
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             new ConnectionRest().execute("gyroskop", data.toString());
             break;
+            */
         case Sensor.TYPE_LIGHT:
             try {
                 data.put("value", sensorEvent.values[0]);
@@ -560,5 +574,23 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
                     .create().show();
         } else
             ActivityCompat.requestPermissions(requireActivity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_PERMISSION_CODE);
+    }
+    public void saveFile(String text, boolean append,String fileName)
+    {
+        FileOutputStream fos = null;
+
+        try {
+            if(append)
+                fos = getActivity().openFileOutput(fileName,getActivity().MODE_APPEND);
+            else
+                fos = getActivity().openFileOutput(fileName,getActivity().MODE_PRIVATE);
+            fos.write(text.getBytes());
+            fos.close();
+            //Toast.makeText(getActivity(), "Gespeichert!", Toast.LENGTH_SHORT).show();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
     }
 }
