@@ -228,6 +228,12 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
                 sensorDelay = SensorManager.SENSOR_DELAY_NORMAL;
             } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[1])) {
                 sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[2])) {
+                sensorDelay = 25 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[3])) {
+                sensorDelay = 50 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[4])) {
+                sensorDelay = 100 * 1000;
             }
             if(b){
                 MainActivity.sensorManager.registerListener(this, accelSensor, sensorDelay);
@@ -244,6 +250,12 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
                 sensorDelay = SensorManager.SENSOR_DELAY_NORMAL;
             } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[1])) {
                 sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[2])) {
+                sensorDelay = 25 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[3])) {
+                sensorDelay = 50 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[4])) {
+                sensorDelay = 100 * 1000;
             }
             if(b){
                 MainActivity.sensorManager.registerListener(this, gyroSensor, sensorDelay);
@@ -260,6 +272,12 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
                 sensorDelay = SensorManager.SENSOR_DELAY_NORMAL;
             } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[1])) {
                 sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[2])) {
+                sensorDelay = 25 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[3])) {
+                sensorDelay = 50 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[4])) {
+                sensorDelay = 100 * 1000;
             }
             if(b){
                 MainActivity.sensorManager.registerListener(this, magnetoSensor, sensorDelay);
@@ -335,6 +353,12 @@ public class AllSensorsFragment extends Fragment implements SensorEventListener,
                 sensorDelay = SensorManager.SENSOR_DELAY_NORMAL;
             } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[1])) {
                 sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[2])) {
+                sensorDelay = 25 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[3])) {
+                sensorDelay = 50 * 1000;
+            } else if (sampleFreq.equals(getResources().getStringArray(R.array.sampling_frequencies)[4])) {
+                sensorDelay = 100 * 1000;
             }
             if(b){
                 MainActivity.sensorManager.registerListener(this, compassSensor, sensorDelay);

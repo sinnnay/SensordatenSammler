@@ -69,6 +69,9 @@
     <string-array id="samp_freq" name="sampling_frequencies">
         <item id="normal">Normal</item>
         <item id="schnell">Schnell</item>
+        <item id="25ms">25ms</item>
+        <item id="50ms">50ms</item>
+        <item id="100ms">100ms</item>
     </string-array>
     <string-array id="loc_methods_items" name="loc_methods_items">
         <item id="gps">GPS (LocMan)</item>
