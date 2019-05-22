@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -28,6 +29,38 @@
             android:padding="10sp"
             android:textColor="@color/colorAccent"
             android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/dirofTravelDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dirOfTravel"
+            android:layout_alignParentStart="true"
+            android:padding="10sp"
+            android:textSize="50sp" />
+
+        <TableLayout
+            android:id="@+id/tableDegree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dirofTravelDegree">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
 
     </RelativeLayout>
 </ScrollView>

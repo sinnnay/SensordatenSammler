@@ -21,6 +21,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -31,6 +32,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,12 +58,15 @@ import java.util.TimerTask;
 public class DirectionOfTravelFragment extends Fragment implements SensorEventListener {
 
     Button startStopBtnAcc;
-    TextView directionOfTravelTV;
+    TextView directionOfTravelTV, getDirectionOfTravelDegreeTV;
     Sensor accelSensor, gyroSensor;
     int sensorDelay;
     int sampleCount;
     int sensorEventIndicatingLeftTurn = 0, sensorEventIndicatingRightTurn = 0, sensorEventIndicatingStraightDir = 0;
     Queue<Float> messdatenZGyro;
+    double degreeV;
+    long lastTime;
+    boolean changeRL = false;
 
     Timer timer = new Timer();
 //    private static final String fileName = "ACCFile.csv";
@@ -79,11 +85,14 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         directionOfTravelTV = getActivity().findViewById(R.id.dirOfTravel);
+        getDirectionOfTravelDegreeTV = getActivity().findViewById(R.id.dirofTravelDegree);
         //Sensoren holen
         accelSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         gyroSensor = MainActivity.sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
         messdatenZGyro = new LinkedList<>();
         sampleCount = 0;
+        degreeV = 0;
+        lastTime = System.currentTimeMillis();
 
         //startet das speichern beim ausführen des switch indem es die sensoren registriert
         sensorDelay = SensorManager.SENSOR_DELAY_FASTEST;
@@ -124,8 +133,13 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
 //                directionOfTravelTV.setText("Geradeaus");
 //                break;
             case Sensor.TYPE_GYROSCOPE:
+
+
                 Log.d("newTEST","gyro: "+sensorEvent.values[0]+"-"+sensorEvent.values[1]+"-"+sensorEvent.values[2]);
                 messdatenZGyro.add(sensorEvent.values[2]);
+                long currentTime = System.currentTimeMillis();
+                degreeV = degreeV + (sensorEvent.values[2]*(currentTime-lastTime)/1000*57.2958);
+                lastTime = System.currentTimeMillis();
                 if(messdatenZGyro.size() > 3){
                     for(Float f : messdatenZGyro){
                         if(sensorEvent.values[2] > 0.4) {
@@ -141,12 +155,22 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
 
                     if(sensorEventIndicatingLeftTurn > sensorEventIndicatingRightTurn && sensorEventIndicatingLeftTurn > sensorEventIndicatingStraightDir){
                         directionOfTravelTV.setText("Links");
+                        getDirectionOfTravelDegreeTV.setText(degreeV+"°");
+                        changeRL = true;
+
                     }
                     else if(sensorEventIndicatingRightTurn > sensorEventIndicatingLeftTurn && sensorEventIndicatingRightTurn > sensorEventIndicatingStraightDir){
                         directionOfTravelTV.setText("Rechts");
+                        getDirectionOfTravelDegreeTV.setText(Math.abs(degreeV)+"°");
+                        changeRL = true;
                     }
                     else{
                         directionOfTravelTV.setText("Geradeaus");
+                        if(changeRL) {
+                            addTableRow();
+                            changeRL = false;
+                        }
+                        degreeV = 0;
                     }
                     sensorEventIndicatingLeftTurn = 0;
                     sensorEventIndicatingRightTurn = 0;
@@ -164,6 +188,24 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
                 Log.d("ERROR", "Fehler bei dem Typen:"+sensorEvent.sensor.getType());
                 break;
         }
+    }
+    private void addTableRow(){
+        TableRow row = new TableRow(getContext());
+        TextView textNr = new TextView(getContext()), textDegree = new TextView(getContext());
+
+        textDegree.setTextSize(12);
+        textDegree.setGravity(Gravity.START);
+        textDegree.setPadding(2,2,2,2);
+        textDegree.setText(((double) Math.round(Math.abs(degreeV*100))/100)+"°");
+
+        textNr.setTextSize(12);
+        textNr.setGravity(Gravity.START);
+        textNr.setPadding(2,2,2,2);
+        textNr.setText("Nr.:"+(((TableLayout) getActivity().findViewById(R.id.tableDegree)).getChildCount()-3)+ "  |  ");
+
+        row.addView(textNr);
+        row.addView(textDegree);
+        ((TableLayout) getActivity().findViewById(R.id.tableDegree)).addView(row, 3);
     }
 
     @Override
