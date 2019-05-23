@@ -191,21 +191,42 @@ public class DirectionOfTravelFragment extends Fragment implements SensorEventLi
     }
     private void addTableRow(){
         TableRow row = new TableRow(getContext());
-        TextView textNr = new TextView(getContext()), textDegree = new TextView(getContext());
+        TextView textNr = new TextView(getContext()), textDegree = new TextView(getContext()), textDirect = new TextView(getContext());
+        if(Math.abs(degreeV) > 30) {
+            textDegree.setTextSize(12);
+            textDegree.setGravity(Gravity.START);
+            textDegree.setPadding(2, 2, 2, 2);
+            double degreecheck = ((double) Math.round(Math.abs(degreeV * 100)) / 100);
+            if(degreecheck<90)
+                degreecheck = 60;
+            else if(degreecheck < 150)
+                degreecheck = 120;
+                    else if(degreecheck < 210)
+                        degreecheck = 180;
+                                else if(degreecheck<270)
+                                    degreecheck = 240;
+                                    else if(degreecheck < 330)
+                                        degreecheck = 300;
+            textDegree.setText(degreecheck + "°");
 
-        textDegree.setTextSize(12);
-        textDegree.setGravity(Gravity.START);
-        textDegree.setPadding(2,2,2,2);
-        textDegree.setText(((double) Math.round(Math.abs(degreeV*100))/100)+"°");
+            textNr.setTextSize(12);
+            textNr.setGravity(Gravity.START);
+            textNr.setPadding(2, 2, 2, 2);
+            textNr.setText("Nr.:" + (((TableLayout) getActivity().findViewById(R.id.tableDegree)).getChildCount() - 3) + "  |  ");
 
-        textNr.setTextSize(12);
-        textNr.setGravity(Gravity.START);
-        textNr.setPadding(2,2,2,2);
-        textNr.setText("Nr.:"+(((TableLayout) getActivity().findViewById(R.id.tableDegree)).getChildCount()-3)+ "  |  ");
+            textNr.setTextSize(12);
+            textNr.setGravity(Gravity.START);
+            textNr.setPadding(2, 2, 2, 2);
+            if(degreeV<0)
+                textDirect.setText("Rechts");
+            else
+                textDirect.setText("Links");
 
-        row.addView(textNr);
-        row.addView(textDegree);
-        ((TableLayout) getActivity().findViewById(R.id.tableDegree)).addView(row, 3);
+            row.addView(textNr);
+            row.addView(textDegree);
+            row.addView(textDirect);
+            ((TableLayout) getActivity().findViewById(R.id.tableDegree)).addView(row, 3);
+        }
     }
 
     @Override
